@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Nick's HTML website</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+  </head>
+
+  <! Comments look like this > 
+
+  <! VIDEO https://www.youtube.com/watch?v=pQN-pnXPaVg (1:28:59) >
+
+  <! Organisational tags: (w/ standard tags surrounding) >
+
+  <! main    >
+  <! article >
+  <! section >
+  <! aside   >
+  <! header  >
+  <! footer  >
+  
+  <body style="background-color:lightblue;">
+
+    <header>
+      <! any code as part of the header should exist here >
+
+      <nav>
+        <! navigaton things here> 
+      </nav>
+
+    </header>
+
+    <main>
+
+      <script src="script.js"></script>
+
+      <section>
+        <h1> HTML Notes </h1>
+        <p> To access the HTML code, Right click, inspect element, then once you are in the conole you may need to expand the the tags to make all the code inside a tag show. There are notes throughout the code showing what everything does. Happy programming! :)
+      </section>
+    
+      <section>
+
+       <! Typing a subscript/superscript characters: >
+       <H2> Subscript and Superscript</H2> 
+       <p>H<sub>2</sub>0</p>
+       <p>10<sup>2</sup><p>
+
+      </section>
+
+    
+      <section>
+
+        <H2>Styling & color with CSS</H2>
+
+        <p> The background of this page is set to "lightblue" </p>
+
+        <! coloring text >
+
+        <p style="color: blue;">This is some blue placeholder text</p>
+        <p style="color: green;">This is some green placeholder text</p>
+
+        <! you can also use specific HEX codes to define what color you want i.e #FFFFFF >
+
+        <! giving text a background color >
+
+        <p style="color: black;       background-color:pink">This is some "highlighted"  placeholder text</p>
+
+
+        <p>This is some standard placeholder text</p>
+
+
+      </section>
+
+      <section>
+
+        <H2> Links </H2>
+
+        <p> Standard link: </p>
+        <a href="https://www.amazon.co.uk/"> Amazon Website</a>
+
+        <p> Link in new tab: </p>
+        <a href="https://www.amazon.co.uk/" target="_blank"> Amazon Website</a>
+
+        <p> Link to another page: </p> 
+        <a href="page2.html"> Page 2</a>
+
+        <p> Link to an image </p>
+        <a href="images/hanging-flower.jpg">Flower Image</a>
+        <p> *Taken by me </p> 
+
+
+      </section>
+
+
+
+      <section>
+
+        <h2> Images </h2> 
+
+        <span>
+
+        <P> Normal image: </P>
+
+        <img src="images/hanging-flower.jpg" alt="Hanging flower" width="500" height="750" />
+
+        <p> Link Image: </p> 
+
+        <a href="https://www.amazon.co.uk/">
+
+        <img src="images/hanging-flower.jpg" alt="Hanging flower" width="500" height="750" />
+        
+
+        </a>
+      
+      </section>
+
+      <section>
+
+        <h2> Video </h2>
+
+        <p> Using a video file: </p>
+
+        <video src="videos/What-FH5.mp4" poster="images/fh5-thumb.png" controls width="600"></video>
+
+        <! you can put 'autoplay' after specifying the thumbnail to make the video play automatically when the site is loaded, loop is another option but I can't see many cases where it would be useful >
+
+        <p> Using a YouTube video: </p>
+        <p> (This is the tutorial I've used for a lot of the HTML here!)</p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <! To do this, go to your desired YouTube video, click SHARE, and then somewhere there should be the EMBED option, coppy the code once you click the option and paste it where you need it >
+
+      </section>
+
+      <section>
+         
+        <h2> Lists </h2>
+
+        <p> Unordered list (bullet pointed lists) </p>
+
+        <ul>
+          <li>Apples</li>
+          <li>Bannanas</li>
+          <li>Oranges</li>
+        </ul>
+
+        <! any list item can be a link >
+
+        <p> Ordered lists (numbered lists) </p>
+
+        <ol>
+          <li>Apples</li>
+          <li>Bannanas</li>
+          <li>Oranges</li>
+        </ol>
+
+        <! add 'type=' and then what you wnat to order by to go up in it, i.e. A means it will go: A, B, C...... >
+
+        <! You can also make lists inside of lists, although there arne't many cases this is used >
+
+
+        <p> Description list </p>
+
+        <dl>
+          <dt>Apples</dt>
+          <dd>- Very tasty</dd>
+          <dt>Oranges</dt>
+          <dd>- The only color you can eat</dd>
+        
+        </dl>
+
+
+      </section>
+
+      <section>
+
+        <h2> Tables </h2>
+
+        <table>
+
+          <thead>
+
+            <caption><h2>List of numbers</h2></caption>
+
+            <tr>
+              <th>num1</th>
+              <th>num2</th>
+              <th>num3</th>
+
+            </tr>
+
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td colspan="2">one</td>
+              <td>two</td>
+              <td>three</td>
+
+            </tr>
+
+            <tr>
+              <td>four</td>
+              <td>five</td>
+              <td>six</td>
+
+            </tr>
+
+          </tbody>
+
+        
+        </table>
+
+
+        <! tr tags are one horizontal row in a table >
+        <! td tags are for table data and signify a coloum>
+        <! th tags mean table headder >
+        <! colspan is used to specify how many colloums singular data will take up >
+
+      </section>
+
+
+
+      <section>
+
+        <h2> Divs and spans </h2>
+
+
+        <! Divs and spans >
+
+        <! Spans are inline (can go beside one another) whereas divs are blocks 
+        (cannot go beside one another) >
+
+        <span>Span1</span>
+        <span>Span2</span>
+
+        <div>div1</div>
+        <div>div2</div>
+
+      
+      </section>
+
+
+      <section>
+
+        <h2> Input & Fourms </h2>
+
+        <! Javascript is required to get inputs that users type >
+
+
+        <p> normal text box: </p>
+
+        <input type="text" value="Enter Username:" />
+
+
+        <div>
+
+        <p> Password box </p>
+
+        <input type="password" />
+
+        </div>
+
+
+        <div>
+
+
+        <textarea rows="10" cols="30">
+
+        
+
+        
+
+        
+        </textarea>
+        </div>
+      
+        <div>
+        <input type="date" />
+        </div>
+
+        <div>
+        <input type="range" />
+        </div>
+
+        <div>
+        <input type="file" />
+        </div>
+
+        <div>
+        <input type="checkbox" />
+        <input type="checkbox" />
+        </div>
+
+        <div>
+        <input name=btn type="radio" />
+        <input name=btn type="radio" />
+        </div>
+
+        <div>
+
+        <input type="submit" />
+
+        </div>
+
+
+        <form>
+          <input type="text"
+
+
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+    <footer>
+
+
+    </footer>
+
+  </body>
+</html>
